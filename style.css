@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#frase {
+  bottom: 40%;
+  font-size: 40px;
+  position: absolute;
+  color: white;
+  bottom: 20%;
+  left: 60%;
+  animation: 6s;
+  position: absolute;
+  opacity: 0;
+  animation: frase 6s;
+  animation-delay: 6s;
+  animation-fill-mode: both;
+  font-weight: bold;
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+}
+
+body {
+  overflow: hidden;
+  background-image: url(./images/background.jpg);
+}
+
+.sair {
+  animation: netflix 11s;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mulher {
+  width: 350px;
+  bottom: 480px;
+  left: 550px;
+  position: absolute;
+  opacity: 0;
+  animation: mulherCaindo 8s 3.5s;
+}
+
+#logo {
+  width: 300px;
+  bottom: 480px;
+  left: 550px;
+  position: absolute;
+  opacity: 0;
+  animation: logoSubindo 6s;
+  z-index: 1;
+  animation-delay: 6s;
+  animation-fill-mode: both;
+}
+
+#persona {
+  width: 300px;
+  bottom: 400px;
+  left: 33%;
+  position: absolute;
+  opacity: 0;
+  animation: personas 6s;
+  z-index: 0;
+  animation-delay: 6s;
+  animation-fill-mode: both;
+}
+
+
+
+@keyframes netflix {
+  0% {
+    opacity: 1;
+    background-image: url(./images/netflix.gif);
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+@keyframes mulherCaindo {
+  0% {
+    bottom: 80%;
+    left: 45%;
+    opacity: 1;
+  }
+
+  100% {
+    width: 10px;
+    left: 45%;
+    bottom: -400px;
+  }
+
+}
+
+@keyframes logoSubindo {
+  0% {
+    width: 10px;
+    left: 37%;
+    bottom: -50%;
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 15%;
+    left: 37%;
+    width: 460px;
+    opacity: 1;
+  }
+
+
+
+}
+
+@keyframes personas {
+  0% {
+    bottom: 220px;
+    left: 33%;
+    width: 550px;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 40%;
+    left: 33%;
+    width: 680px;
+    opacity: 1;
+  }
+
+}
+
+@keyframes frase {
+  0% {
+    width: 600px;
+    left: 40%;
+    bottom: -50%;
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 10%;
+    left: 35%;
+    width: 600px;
+    opacity: 1;
+    font-size: 70px;
+  }
+}
